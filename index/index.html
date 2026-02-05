@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global/css/global.css" />
+    <link rel="stylesheet" href="../pages/index/style/style.css" />
+    <link
+      rel="icon"
+      href="../resources/images/favicon/logo.png"
+      type="images/png"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <nav class="sidebar">
+        <div class="sidebar-content">
+          <h1>山下真琴</h1>
+          <button onclick="sidebar()">
+            <div class="close-icon">
+              <div class="line"></div>
+            </div>
+          </button>
+        </div>
+
+        <ul id="ul-sidebar">
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a href="project.html"><li>Projects</li></a>
+          <a href="blog.html"><li>Blog</li></a>
+        </ul>
+      </nav>
+      <nav class="navbar">
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a href="project.html"><li>Projects</li></a>
+          <a href="blog.html"><li>Blog</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div alt="" class="bg"></div>
+      <div class="container">
+        <div class="content">
+          <h2 class="fade-in">こんにちは！</h2>
+          <h1 class="fade-in">I'm Hibban!</h1>
+          <p class="fade-in">Front-end Developer, Software Engineer</p>
+          <p class="fade-in">
+             SMKN 1 Bekasi City Students and Aspiring Full-Stack Dev.
+          </p>
+          <ul class="social">
+            <li>
+              <a href="https://github.com/kagaya-01" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/hibban-ahmad-ibrahim-b05634379/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/kagaya.01/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://x.com/hibbanibrahim09"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+          </ul>
+          <div class="btn-option fade-up">
+            <button
+              id="btn-1"
+              class="fade-up"
+              onclick="window.location.href='about.html'"
+            >
+              About Me!
+            </button>
+            <button
+              id="btn-2"
+              class="fade-up"
+              onclick="window.location.href='blog.html'"
+            >
+              Blog
+            </button>
+          </div>
+        </div>
+        <div class="image fade-up">
+          <div id="circle"></div>
+          <img src="../resources/images/profile.webp" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>Portofolio</h3>
+          <p>Email: hibbanyama@gmail.com</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow</h4>
+          <a href="https://www.instagram.com/kagaya.01/">Instagram</a> |
+          <a href="https://www.linkedin.com/in/hibban-ahmad-ibrahim-b05634379/">LinkedIn</a> |
+          <a href="https://x.com/hibbanibrahim09">Twitter</a> |
+          <a href="https://github.com/kagaya-01">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hibban Ahmad Ibrahim. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="../global/script/script.js"></script>
+  <script src="../pages/index/script/script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/f65a8d8213.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

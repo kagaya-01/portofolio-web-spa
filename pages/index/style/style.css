@@ -1,0 +1,236 @@
+.slider-input{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    align-items: center;
+    background-color: aqua;
+}
+
+body{
+    background-image: url("../../../resources/images/bg/pexels-suissounet-2101187.webp");
+    background-position: top;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 701px) {
+    .container {
+        gap: 2rem;
+        width: 65%;
+        height: 25rem;
+        margin-bottom: 1rem;
+    }
+    .content{
+        width: 50%;
+    }
+    .image {
+        background-color: var(--accent-color);
+        width: 50%;
+        border-radius: 50% 0 50% 0;
+        display: flex;
+        height: inherit;
+    }
+    .image img {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .image {
+        backdrop-filter: blur(10px);
+        border-radius: 50%;
+        display: flex;
+        height: 10rem;
+        margin: 4rem auto 0 auto;
+        align-items:flex-start;
+        height: 10rem;
+        width: 10rem;
+    }
+    .image img{
+        width: 300px;
+    }
+    .container{
+        gap: 4rem;
+        width: 65%;
+        min-height: 25rem;
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        text-align: center;
+        top: 0;
+        position: absolute;
+        min-width: 80%;
+        flex-direction: column-reverse;
+    }
+    .content{
+        justify-content: center;
+        align-items: center;
+    }
+    .image {
+        backdrop-filter: blur(10px);
+        border-radius: 50%;
+        display: flex;
+        height: 10rem;
+        margin: 4rem auto 0 auto;
+        align-items:flex-start;
+        height: 10rem;
+        width: 10rem;
+    }
+    .image img{
+        width: 300px;
+    }
+}
+
+.container{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+}
+
+.image{
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    color: aliceblue;
+}
+
+.content h2 {
+    opacity: 0;
+    color: var(--accent-color);
+    animation-delay: var(--ani-delay1);
+}
+
+.content h1{
+    opacity: 0;
+    animation-delay: var(--ani-delay2);
+    font-size: 400%; 
+}
+
+.content p {
+    opacity: 0;
+    animation-delay: var(--ani-delay3);
+    font-size: larger;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.social{
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.social li{
+    opacity: 0;
+    align-self: flex-end;
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeUp var(--ani-duration) ease forwards;
+}
+
+.social i{
+    color: var(--accent-color);
+}
+
+.social li:nth-child(1) {
+    animation-delay: var(--ani-delay);
+}
+
+.social li:nth-child(2) {
+    animation-delay: calc(var(--ani-delay) + 0.1s);
+}
+
+.social li:nth-child(3) {
+    animation-delay: calc(var(--ani-delay) + 0.2s);
+}
+
+.social li:nth-child(4) {
+    animation-delay: calc(var(--ani-delay) + 0.3s);
+}
+
+.btn-option{
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.content #btn-1 {
+    border: 0;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    border-radius: 12px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.content #btn-1:hover {
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+.content #btn-2 {
+    border: 0;
+    box-sizing: content-box;
+    font-size: 1rem; 
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    background-color: #ffffff00;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.content #btn-2:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.btn-option{
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+}
+
+.btn-option button{
+    position: relative;
+    opacity: 0;
+}
+
+.btn-option button:nth-child(1){
+    animation-delay: var(--ani-delay);
+}
+.btn-option button:nth-child(2) {
+    animation-delay: calc(var(--ani-delay) + 0.1s);
+}
+
+#circle{
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    width: 200px;
+    height: 3rem;
+}
