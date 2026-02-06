@@ -30,7 +30,7 @@
         <ul id="ul-sidebar">
           <a href="#profile-section"><li>Home</li></a>
           <a href="#about-section"><li>About</li></a>
-          <a href="#projects-section"><li>Projects</li></a>
+          <a href="#project-section"><li>Projects</li></a>
           <a href="#contact-section"><li>Contact</li></a>
           <a href="blog.html"><li>Blog</li></a>
         </ul>
@@ -40,12 +40,13 @@
           <a href="#profile-section"><li>Home</li></a>
           <a href="#about-section"><li>About</li></a>
           <a href="#project-section"><li>Projects</li></a>
-          <a href="#contact.html"><li>Contact</li></a>
+          <a href="#contact-section"><li>Contact</li></a>
           <a href="blog.html"><li>Blog</li></a>
         </ul>
       </nav>
     </header>
     <main>
+      <button onclick="sidebar()"><div class="overlay"></div></button> 
       <!-- Profile Section -->
       <div alt="" class="bg"></div>
       <section id="profile-section">
@@ -129,32 +130,75 @@
           <div class="skill-container-about">
             <h2>What i can do:</h2>
             <div class="skill-content-about">
-              <div class="skill-content">
-                <i class="fa-solid fa-palette"></i>
+              <div class="skill-content skill1">
+                <i class="fa-solid fa-palette icon1"></i>
                 <h2>Design</h2>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptate, atque!
                 </p>
+                <ul class="skill-content-icon">
+                  <li><a href="https://www.figma.com" target="_blank"><i class="fa-brands fa-figma icons-skill"></i></a></li>
+                  <li>
+                    <a href="https://www.canva.com" target="_blank">
+                    <img
+                      src="./../resources/images/canva.png"
+                      alt=""
+                      srcset=""
+                      class="icons-skill"
+                    /></a>
+                  </li>
+                </ul>
               </div>
-              <div class="skill-content">
-                <i class="fa-solid fa-code"></i>
+              <div class="skill-content skill2">
+                <i class="fa-solid fa-code icon1"></i>
                 <h2>Produce</h2>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Harum, quae?
                 </p>
+                <ul class="skill-content-icon">
+                  <li><a href="https://www.nodejs.org/" target="_blank"><i class="fa-brands fa-node-js icons-skill"></i></a></li>
+                  <li><a href="https://www.react.dev/" target="_blank"><i class="fa-brands fa-react icons-skill"></i></a></li>
+                  <li><a href="https://www.code.visualstudio.com/" target="_blank"><img
+                    src="./../resources/images/vscode-alt.svg"
+                    alt=""
+                    srcset=""
+                    class="icons-skill"
+                  /></a></li>
+                </ul>
+                <div class="animate-icons-container">
+                  <i class="fa-brands fa-node-js animate-icons popUp1-2"></i>
+                  <i class="fa-brands fa-react animate-icons popUp2-2"></i>
+                  <i class="fa-brands fa-js animate-icons popUp3-2"></i>
+                </div>
               </div>
-              <div class="skill-content">
-                <i class="fa-solid fa-code-branch"></i>
-                <h2>Operate</h2>
+              <div class="skill-content skill3">
+                <i class="fa-solid fa-server icon1"></i>
+                <h2>Manage & Operate</h2>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Maxime, ab.
                 </p>
+                <ul class="skill-content-icon">
+                  <li><a href="https://www.github.com/" target="_blank"><i class="fa-brands fa-github icons-skill"></i></a></li>
+                  <li><a href="https://www.git-scm.com/" target="_blank"><i class="fa-brands fa-git-alt icons-skill"></i></a></li>
+                  <li><a href="https://www.mariadb.org/" target="_blank"><img
+                    src="./../resources/images/mariadb_logo_icon_247781.svg"
+                    style="filter: invert()"
+                    alt=""
+                    srcset=""
+                    class="icons-skill"
+                  /></a></li>
+                </ul>
+                <div class="animate-icons-container">
+                  <i class="fa-brands fa-git-alt animate-icons popUp1-3"></i>
+                  <i class="fa-brands fa-github animate-icons popUp2-3"></i>
+                  <i class="fa-brands fa-git animate-icons popUp3-3"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -186,9 +230,8 @@
               <p>
                 Snaapy adalah layanan fotografi profesional yang siap membantu
                 Anda mengabadikan setiap momen berharga dalam hidup. Kami
-                menyediakan jasa pemotretan untuk berbagai kebutuhan, mulai
-                dari Prewedding, Pernikahan, Foto produk, hingga dokumentasi
-                Event.
+                menyediakan jasa pemotretan untuk berbagai kebutuhan, mulai dari
+                Prewedding, Pernikahan, Foto produk, hingga dokumentasi Event.
               </p>
               <div class="box1"></div>
             </div>
@@ -215,9 +258,8 @@
               <p>
                 Snaapy adalah layanan fotografi profesional yang siap membantu
                 Anda mengabadikan setiap momen berharga dalam hidup. Kami
-                menyediakan jasa pemotretan untuk berbagai kebutuhan, mulai
-                dari Prewedding, Pernikahan, Foto produk, hingga dokumentasi
-                Event.
+                menyediakan jasa pemotretan untuk berbagai kebutuhan, mulai dari
+                Prewedding, Pernikahan, Foto produk, hingga dokumentasi Event.
               </p>
             </div>
             <div class="btn-option-project fade-up">
@@ -235,7 +277,7 @@
       </section>
 
       <!-- Contact Section -->
-       <section id="contact-section">
+      <section id="contact-section">
         <div class="container-contact">
           <div class="content-contact">
             <h1>Contact Me!</h1>
@@ -305,11 +347,7 @@
                 <div id="subject-con">
                   <label for="subject"
                     >Subject
-                    <input
-                      id="subject"
-                      name="subject"
-                      type="text"
-                    />
+                    <input id="subject" name="subject" type="text" />
                   </label>
                 </div>
 

@@ -5,6 +5,7 @@ function sidebar() {
     const sidebarUl = document.getElementById("ul-sidebar");
     const sidebarBtn = document.querySelector(".close-icon");
     const line = document.querySelector(".line");
+    const overlay = document.querySelector(".overlay");
 
     if (!isOpened) {
         isOpened = true;
@@ -16,6 +17,7 @@ function sidebar() {
         sidebarBtn.style.setProperty("--bottom", "0");
         sidebarBtn.style.setProperty("--top", "0");
         line.style.setProperty("opacity", "0");
+        overlay.style.setProperty('display', 'block');
     }
 
     else if(isOpened) { 
@@ -30,6 +32,7 @@ function sidebar() {
         setTimeout(() => {
             sidebarUl.style.setProperty('display', 'none');
         }, 100);
+        overlay.style.setProperty('display', 'none');
     }
 }
 
