@@ -4,6 +4,7 @@
 :root{
     --ani-duration: 0.5s;
     --ani-delay: 0.1s;
+    --ani-popUp: 0.2s;
     --backdrop-value: 1rem;
     --mode: #f4f9ff;
     --white: #f4f9ff;
@@ -190,49 +191,49 @@
 }
 
 .skill3:hover .popUp1-3{
-    animation: anim-popup-from-back1 0.5s ease-in-out forwards
+    animation: anim-popup-from-back1 var(--ani-popUp) ease-in-out forwards
 }
 .skill3:not(hover) .popUp1-3 {
-    animation: anim-popup-from-back1Out 0.5s ease-in-out forwards
+    animation: anim-popup-from-back1Out var(--ani-popUp) ease-in-out forwards
 }
 
 .skill3:hover .popUp2-3 {
-    animation: anim-popup-from-back2 0.5s ease-in-out forwards
+    animation: anim-popup-from-back2 var(--ani-popUp) ease-in-out forwards
 }
 .skill3:not(hover) .popUp2-3 {
-    animation: anim-popup-from-back2Out 0.5s ease-in-out forwards
+    animation: anim-popup-from-back2Out var(--ani-popUp) ease-in-out forwards
 }
 
 .skill3:hover .popUp3-3 {
-    animation: anim-popup-from-back3 0.5s ease-in-out forwards
+    animation: anim-popup-from-back3 var(--ani-popUp) ease-in-out forwards
 }
 
 .skill3:not(hover) .popUp3-3 {
-    animation: anim-popup-from-back3Out 0.5s ease-in-out forwards
+    animation: anim-popup-from-back3Out var(--ani-popUp) ease-in-out forwards
 }
 
 .skill2:hover .popUp1-2 {
-    animation: anim-popup-from-back1 0.5s ease-in-out forwards
+    animation: anim-popup-from-back1 var(--ani-popUp) ease-in-out forwards
 }
 
 .skill2:not(hover) .popUp1-2 {
-    animation: anim-popup-from-back1Out 0.5s ease-in-out forwards
+    animation: anim-popup-from-back1Out var(--ani-popUp) ease-in-out forwards
 }
 
 .skill2:hover .popUp2-2 {
-    animation: anim-popup-from-back2 0.5s ease-in-out forwards
+    animation: anim-popup-from-back2 var(--ani-popUp) ease-in-out forwards
 }
 
 .skill2:not(hover) .popUp2-2 {
-    animation: anim-popup-from-back2Out 0.5s ease-in-out forwards
+    animation: anim-popup-from-back2Out var(--ani-popUp) ease-in-out forwards
 }
 
 .skill2:hover .popUp3-2 {
-    animation: anim-popup-from-back3 0.5s ease-in-out forwards
+    animation: anim-popup-from-back3 var(--ani-popUp) ease-in-out forwards
 }
 
 .skill2:not(hover) .popUp3-2 {
-    animation: anim-popup-from-back3Out 0.5s ease-in-out forwards
+    animation: anim-popup-from-back3Out var(--ani-popUp) ease-in-out forwards
 }
 
 .fade-up{
