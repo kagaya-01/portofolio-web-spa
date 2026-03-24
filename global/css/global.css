@@ -4,7 +4,7 @@
 :root{
     --ani-duration: 0.5s;
     --ani-delay: 0.1s;
-    --ani-popUp: 0.2s;
+    --ani-popUp: 0.3s;
     --backdrop-value: 1rem;
     --mode: #f4f9ff;
     --white: #f4f9ff;
@@ -53,7 +53,8 @@
     0%{
         transform: translateX(-10%) rotate(0deg);
         filter: blur(1rem);
-        top: 0;
+        top: 14rem;
+        
     }
 
     35% {
@@ -67,7 +68,7 @@
     100%{
         opacity: 1;
         transform: translateX(-60%) rotate(-10deg);
-        top: 14rem
+        top: 7rem;
     }
 }
 
@@ -76,7 +77,7 @@
     0% {
         opacity: 1;
         transform: translateX(-60%) rotate(-10deg);
-        top: 14rem
+        top: 7rem;
     }
 
     50% {
@@ -91,7 +92,7 @@
     100% {
         transform: translateX(-10%) rotate(0deg);
         filter: blur(1rem);
-        top: 0;
+        top: 14rem;
     }
 }
 
@@ -101,7 +102,7 @@
         transform: rotate(0deg);
         transform: translateX(10%) rotate(0deg);
         filter: blur(1rem);
-        top: 0;
+        top: 14rem;
     }
 
     35%{
@@ -116,7 +117,7 @@
     100% {
         opacity: 1;
         transform: translateX(60%) rotate(-10deg);
-        top: 7rem
+        top: 10rem
     }
 }
 
@@ -125,7 +126,7 @@
     0% {
         opacity: 1;
         transform: translateX(60%) rotate(-10deg);
-        top: 7rem
+        top: 10rem
     }
 
     50% {
@@ -140,7 +141,7 @@
     100% {
         transform: translateX(10%) rotate(0deg);
         filter: blur(1rem);
-        top: 0;
+        top: 14rem;
     }
 }
 
@@ -190,28 +191,32 @@
     }
 }
 
-.skill3:hover .popUp1-3{
+.skill1:hover .popUp1-1 {
     animation: anim-popup-from-back1 var(--ani-popUp) ease-in-out forwards
 }
-.skill3:not(hover) .popUp1-3 {
+
+.skill1:not(hover) .popUp1-1 {
     animation: anim-popup-from-back1Out var(--ani-popUp) ease-in-out forwards
 }
 
-.skill3:hover .popUp2-3 {
+.skill1:hover .popUp2-1 {
     animation: anim-popup-from-back2 var(--ani-popUp) ease-in-out forwards
 }
-.skill3:not(hover) .popUp2-3 {
+
+.skill1:not(hover) .popUp2-1 {
     animation: anim-popup-from-back2Out var(--ani-popUp) ease-in-out forwards
 }
 
-.skill3:hover .popUp3-3 {
+.skill1:hover .popUp3-1 {
     animation: anim-popup-from-back3 var(--ani-popUp) ease-in-out forwards
 }
 
-.skill3:not(hover) .popUp3-3 {
+.skill1:not(hover) .popUp3-1 {
     animation: anim-popup-from-back3Out var(--ani-popUp) ease-in-out forwards
 }
 
+
+/* Skill 2 */
 .skill2:hover .popUp1-2 {
     animation: anim-popup-from-back1 var(--ani-popUp) ease-in-out forwards
 }
@@ -233,6 +238,29 @@
 }
 
 .skill2:not(hover) .popUp3-2 {
+    animation: anim-popup-from-back3Out var(--ani-popUp) ease-in-out forwards
+}
+
+/* Skill 3 */
+.skill3:hover .popUp1-3{
+    animation: anim-popup-from-back1 var(--ani-popUp) ease-in-out forwards
+}
+.skill3:not(hover) .popUp1-3 {
+    animation: anim-popup-from-back1Out var(--ani-popUp) ease-in-out forwards
+}
+
+.skill3:hover .popUp2-3 {
+    animation: anim-popup-from-back2 var(--ani-popUp) ease-in-out forwards
+}
+.skill3:not(hover) .popUp2-3 {
+    animation: anim-popup-from-back2Out var(--ani-popUp) ease-in-out forwards
+}
+
+.skill3:hover .popUp3-3 {
+    animation: anim-popup-from-back3 var(--ani-popUp) ease-in-out forwards
+}
+
+.skill3:not(hover) .popUp3-3 {
     animation: anim-popup-from-back3Out var(--ani-popUp) ease-in-out forwards
 }
 
@@ -516,6 +544,7 @@ section{
     .skill-container-about {
         padding: 1rem;
         width: 60%;
+        
     }
 
     .skill-content-about {
@@ -625,9 +654,10 @@ section{
     }
 
     .skill-content {
-        width: 90%;
+        max-width: 90%;
         border-radius: 12px;
         backdrop-filter: blur(var(--backdrop-value));
+        pointer-events: none;
     }
 
     /* Project */
@@ -943,14 +973,14 @@ section{
 .skill-container-about {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 4rem;
     box-sizing: border-box;
 }
 
 .skill-content-about{
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .skill-container-about h2 {
@@ -967,7 +997,7 @@ section{
     justify-items: center;
     align-items: center;
     position: relative;
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 1rem;
     gap: 1rem;
 }
 .skill-content .icon1{
@@ -1242,6 +1272,12 @@ label {
 
 #contactForm {
     width: 90%;
+}
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .btn-contact {
