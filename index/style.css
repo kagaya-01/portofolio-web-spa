@@ -11,8 +11,13 @@
 }
 
 body{
-    background-image: url('./../../../resources/images/bg/pexels-suissounet-2101187.webp');
     color: white;
+}
+
+.bg-image{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 section{
